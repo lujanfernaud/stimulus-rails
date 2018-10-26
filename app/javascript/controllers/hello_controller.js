@@ -13,6 +13,8 @@ export default class extends Controller {
   static targets = ["output"]
 
   say_hello() {
-    this.outputTarget.textContent = "Hello World!"
+    this.outputTargets.forEach(target => {
+      target.textContent = "Hello World!"
+    })
   }
 }
