@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root "greetings#index"
+  root "home#index"
+
+  resources :greetings, only: :index
 end

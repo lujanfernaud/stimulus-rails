@@ -1,16 +1,24 @@
-<div data-controller="hello">
-  <form action="javascript:void(0);">
-    <input type="text" data-target="hello.input">
+<header>
+  <h2>Greeter</h2>
+</header>
 
-    <button data-action="click->hello#set_name click->hello#say_hello">
-      Say hello!
-    </button>
-  </form>
+<main>
+  <div data-controller="hello">
+    <form action="javascript:void(0);">
+      <input type="text" data-target="hello.input">
 
-  <h1 data-target="hello.output"></h1>
-  <h2 data-target="hello.output"></h2>
-  <h3 data-target="hello.output"></h3>
-  <h4 data-target="hello.output"></h4>
-  <h4 data-target="hello.output"></h4>
-  <h5 data-target="hello.output"></h5>
-</div>
+      <button data-action="click->hello#set_name click->hello#say_hello">
+        Say hello!
+      </button>
+    </form>
+
+    <h1 data-target="hello.output"></h1>
+    <h2 data-target="hello.output"></h2>
+    <h3 data-target="hello.output"></h3>
+    <h4 data-target="hello.output"></h4>
+    <h4 data-target="hello.output"></h4>
+    <h5 data-target="hello.output"></h5>
+  </div>
+</main>
+
+<%= link_to "Index", root_path %>
