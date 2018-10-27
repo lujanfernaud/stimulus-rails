@@ -1,1 +1,7 @@
-# stimulus-rails
+# Stimulus on Rails
+
+A Stimulus sketchbook.
+
+## Sketches
+
+- Greeter
