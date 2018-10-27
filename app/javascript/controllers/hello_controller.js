@@ -10,11 +10,17 @@
 import { Controller } from "stimulus"
 
 export default class extends Controller {
-  static targets = ["output"]
+  static targets = ["input", "output"]
 
   say_hello() {
+    name = this.name ? this.name : "World"
+
     this.outputTargets.forEach(target => {
-      target.textContent = "Hello World!"
+      target.textContent = `Hello ${name}!`
     })
+  }
+
+  set_name() {
+    this.name = this.inputTarget.value
   }
 }

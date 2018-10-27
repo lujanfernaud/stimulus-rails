@@ -1,5 +1,12 @@
 <div data-controller="hello">
-  <button data-action="click->hello#say_hello">Say hello!</button>
+  <form action="javascript:void(0);">
+    <input type="text" data-target="hello.input">
+
+    <button data-action="click->hello#set_name click->hello#say_hello">
+      Say hello!
+    </button>
+  </form>
+
   <h1 data-target="hello.output"></h1>
   <h2 data-target="hello.output"></h2>
   <h3 data-target="hello.output"></h3>
